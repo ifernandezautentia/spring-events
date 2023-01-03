@@ -14,6 +14,6 @@ public class UserCreatedEventListener {
     @EventListener
     public void handleUserCreatedEvent(UserCreatedEvent event){
         //do stuff with repositories and other third parties
-        LOGGER.info("Event received when a user with NIF = {} has been created", event.getNif());
+        LOGGER.info("Event {} received", event);
     }
 }
